@@ -1,0 +1,13 @@
+sql문
+
+회원 Create table shopuser(ID varchar(20), PW varchar(20), UName varchar(20), UAddress varchar(50), UPhone varchar(13), primary key (ID));
+
+큐엔에이Create table shopQnA (QNum int, QTitle varchar(50), QContents varchar(2048), QID varchar(20), QDate datetime, Available int, primary key(QNum));
+
+공지사항 Create table shopanc (ANum int , ATitle varchar(50), AContents varchar(2048), AID varchar(20), ADate datetime, AncAvailable int, primary key(ANum));
+
+제품 Create table shoppd (PNum int , PName varchar(20), PPrice varchar(20), PPexplain varchar(2048), PAvailable int, primary key(PNum));
+
+주문 Create table shopord (ONum int, OOproduct varchar(20), OOsize varchar(20), OOID varchar(20), OODate datetime, OOAvailable int, primary key(ONum));
+
+관리자 Create table shopadm (RID varchar(20), RPW varchar(20), RName varchar(20), Rphone varchar(13), primary key(RID));
